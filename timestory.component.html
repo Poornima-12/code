@@ -1,0 +1,33 @@
+
+<html>
+<head> TIMES
+<style>
+h1 {
+  color: red;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: black;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>Times Latest Stories</h1>
+
+    <ul>
+        <li *ngFor="let story of time">
+         <a [attr.href]="story.link" >{{story.title}}
+        </a>
+      </li>  
+      </ul>
+
+
+</body>
+</html>
+
+  
+  
